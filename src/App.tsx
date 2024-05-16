@@ -91,7 +91,7 @@ function App(): JSX.Element {
 
     axios
       .post<{ prediction: string; image_base64: string }>(
-        "http://127.0.0.1:9001/mnist_predict",
+        "http://127.0.0.1:9005/mnist_predict",
         formData
       )
       .then((response) => {
@@ -119,7 +119,7 @@ function App(): JSX.Element {
 
     axios
       .post<{ prediction: string; image_base64: string }>(
-        "http://127.0.0.1:9001/cifar10_predict",
+        "http://127.0.0.1:9005/cifar10_predict",
         formData
       )
       .then((response) => {
